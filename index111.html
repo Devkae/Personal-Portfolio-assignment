@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Luqman Syakir </title>
+    <link rel = "icon" href =
+            "images.jpg"
+          type = "image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function testVariable() {
+            debugger
+            var strText = document.getElementById("txtName").value;
+            var strText1 = document.getElementById("txtEmail").value;
+            document.getElementById("p1").innerHTML = strText;
+            document.getElementById("p2").innerHTML = strText1;
+
+        }
+
+
+        function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+ function showInput() {
+        document.getElementById('display').innerHTML = document.getElementById("user_input").value;
+                    }
+    </script>
+</head>
+
+
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li1 {
+  float: left;
+}
+
+li1 {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+
+table, th, td {
+background-color:#44B757;
+  border:1px solid black;
+   border-collapse: collapse;
+  text-align: center;
+}
+
+
+.header {
+ background-color: #3498DB   ;
+ font: italic 1.2em "Fira Sans", serif;
+ border-style: groove;
+  padding: auto;
+  text-align: center;
+  }
+  h2{
+ background-image: url("geometry.png");
+ height: 300px;
+ font: italic 3em "Fira Sans", serif;
+ border-style: groove;
+  padding: auto;
+  text-align: left;
+  }
+
+  body {
+    background-color: lightblue;
+
+    }
+
+img {
+float:left;
+  display: block;
+  margin-left:auto;
+  margin-right: 0px;
+}
+.content1 {
+font: 1.2em "Fira Sans", sans-serif;
+background-color: #14B7AD;
+ width: auto;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  border: 3px solid green;
+
+
+
+a:link{
+color: blue;
+}
+a:hover {
+  color: hotpink;
+}
+a:visited{
+color: red;
+}
+a:active{
+color: green;
+}
+
+
+
+
+
+</style>
+<body>
+<ul>
+    <li1><a href="index111.html">Home</a></li1>
+    <li1><a href="contact.html">Contact</a></li1>
+    <li1><a href="about.html">About</a></li1>
+</ul>
+
+
+
+
+
+<div class="header">
+<h1>MY PORTFOLIO</h1>
+</div>
+
+<p id="msg"></p>
+
+<!-- For adding picture and its links -->
+<h2>
+
+    <a href="https://www.linkedin.com/in/luqman-syakir-a6b4851bb/" target="_blank" ><img src ="pfp.png" alt = "Click to go to linkedin"  style="width:250px;height:300px;"  ></a>
+    Welcome to my personal website
+</h2>
+<!-- add the colum -->
+<div class="content1">
+<ul>
+    <pre><li> Full Name : LUQMAN SYAKIR BIN YAHYA </li>
+    <li> 20 years old </li>
+<li> Currently studying Computer Science at UiTM Raub, Pahang. </li></pre>
+
+</ul>
+
+   <p>      I enjoy to learn programming and web designing. I refer these websites to learn programing from examples: </p>
+
+    <ul>
+        <li><a href="https://stackoverflow.com/" target="_blank" >Stack Overflow </a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank" >w3school.com</a></li>
+            <li><a href="https://www.coderepublics.com/HTML/html-tutorial.php" target="_blank">CodeRepublics </a></li>
+
+    </ul>
+</div>
+
+<!-- table -->
+<table style="width:100%">
+    <tr>
+        <th>Level of education</th>
+        <th>Place of study</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Elementary school</td>
+            <td>SMKSS</td>
+        <td>Malaysia</td>
+    </tr>
+    <tr>
+        <td>High School</td>
+        <td>SKTU</td>
+        <td>Malaysia</td>
+    </tr>
+    <tr>
+        <td>Diploma</td>
+        <td>UiTM</td>
+        <td>Malaysia</td>
+    </tr>
+    </table>
+
+
+
+Kindly , please submit your detail
+<form>
+<br>
+    <input type="text" name="Name" id="txtName" placeholder="Nickname">
+    <input type="text" name="Email" id="txtEmail" placeholder="Email">
+    <input type="button" value="Submit" id="btnSubmit" onclick="testVariable()">
+</form>
+<div>
+    <label>Your Nickname: </label>
+    <p id="p1"></p>
+    Your Email: </label>
+    <p id="p2"></p><label>
+</div>
+
+Where are you from ?
+<form>
+    <input type="radio" id="malaysia" name="country" value="Malaysia ">
+    <label for="malaysia">Malaysia</label><br>
+    <input type="radio" id="indonesia" name="country" value="Indonesia">
+    <label for="indonesia">Indonesia</label><br>
+    <input type="radio" id="sg" name="country" value="Singapore">
+    <label for="sg">Singapore</label><br><br>
+
+    <button type="button" onclick="checkButton()">Submit</button>
+</form>
+<h4 id="disp"></h4>
+
+<script>
+    function checkButton() {
+            if(document.getElementById('malaysia').checked) {
+                document.getElementById("disp").innerHTML
+                    = document.getElementById("malaysia").value
+					+ " , Kuala Lumpur is very vibrant city ";
+					   }
+            else if(document.getElementById('indonesia').checked) {
+                document.getElementById("disp").innerHTML
+                    = document.getElementById("indonesia").value
+                    + " , Bali is a good tourist spot";
+            }
+            else if (document.getElementById('sg').checked) {
+                document.getElementById("disp").innerHTML
+                    = document.getElementById("sg").value
+                    + ", it is very developed!";
+
+
+            }
+    }
+
+</script>
+
+What language have you learned?
+<form >
+    <input type="checkbox" id="java" name="lang" value="Java ">
+    <label for="java">Java</label><br>
+    <input type="checkbox" id="cplus" name="lang" value="C++">
+    <label for="cplus">C++</label><br>
+    <input type="checkbox" id="pyt" name="lang" value="Python">
+    <label for="pyt">Python</label><br><br>
+    <button type="button" onclick="checkButton()">Submit </button>
+</form>
+<h5 id="disply"></h5>
+<script>
+
+    function checkButton() {
+            if(document.getElementById('java').checked) {
+                document.getElementById("disply").innerHTML
+                    = document.getElementById("java").value;
+					   }
+            else if(document.getElementById('cplus').checked) {
+                document.getElementById("disply").innerHTML
+                    = document.getElementById("cplus").value;
+
+            }
+            else if(document.getElementById('pyt').checked) {
+                document.getElementById("disply").innerHTML
+                    = document.getElementById("pyt").value;
+
+            }
+    }
+
+</script>
+
+
+
+<label for="device">Which one do you prefer?:</label>
+
+<select name="device" id="device">
+    <option value="Smartphone">Smartphone</option>
+    <option value="Laptop">Laptop</option>
+    <option value="Tablet">Tablet</option>
+    <option value="Computer">Computer</option>
+    <button type="button" onclick="checkButton()">Submit </button>
+</select>
+<script>
+function checkButton() {
+if(document.getElementById('Smartphone').checked) {
+document.getElementById("disply").innerHTML
+= document.getElementById("Smartphone").value
++ " , Kuala Lumpur is very vibrant city ";
+}
+else if(document.getElementById('Laptop').checked) {
+document.getElementById("disply").innerHTML
+= document.getElementById("Laptop").value
++ " , Bali is a good tourist spot";
+}
+else if(document.getElementById('Tablet').checked) {
+document.getElementById("disply").innerHTML
+= document.getElementById("Tablet").value
++ ", it is very developed!";
+}
+else if(document.getElementById('Computer').checked) {
+document.getElementById("disply").innerHTML
+= document.getElementById("Computer").value
++ ", it is very developed!";
+}
+}
+</script>
+
+<label for="brand">Choose a brand:</label>
+
+<select name="brand" id="brand">
+    <option value="Apple">Apple</option>
+    <option value="Samsung">Samsung</option>
+    <option value="Huawei">Huawei</option>
+    <option value="Asus">Asus</option>
+</select>
+
+
+<form>
+    <label>Enter your feedback</label>
+    <input type="text" name="message" id="user_input">
+</form>
+<input type="submit" onclick="showInput();"><br>
+<label>Your input: </label>
+<p><span id="display"></span></p>
+
+</body>
+
+</html>

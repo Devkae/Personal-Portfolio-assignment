@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel = "icon" href =
+            "images.jpg"
+          type = "image/x-icon">
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li1 {
+  float: left;
+}
+
+li1{
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+body {
+background-color: lightblue;
+
+}
+p{
+background-color: lightblue;
+text-align: center;
+font: italic 1.2em "Fira Sans", serif;
+font-size: 25px;
+width: 1350px;
+border: 15px solid green;
+padding: 50px;
+margin: 20px;
+
+}
+
+<ul>
+    <li1><a href="index111.html">Home</a></li1>
+    <li1><a href="contact.html">Contact</a></li1>
+    <li1><a href="about.html">About</a></li1>
+</ul>
+
+
+</style>
+<ul>
+    <li1><a href="index111.html">Home</a></li1>
+    <li1><a href="contact.html">Contact</a></li1>
+    <li1><a href="about.html">About</a></li1>
+</ul>
+<body>
+<p> Kindly , please submit your detail and I will reach you out soon , thank you! </p>
+
+<br>
+<input type="text" name="Name" id="txtName" placeholder="Nickname">
+<input type="text" name="Email" id="txtEmail" placeholder="Email">
+<input type="button" value="Submit" id="btnSubmit" onclick="testVariable()">
+</form>
+
+
+<script>
+        function testVariable() {
+            //debugger
+            var strText = document.getElementById("txtName").value;
+            var strText1 = document.getElementById("txtEmail").value;
+            document.getElementById("p1").innerHTML = strText;
+            document.getElementById("p2").innerHTML = strText1;
+
+        }
+
+
+</script>
+<br>
+<label>Your Nickname: </label>
+<div><p1 id="p1"></p1> <br>
+    Your Email: </label><br>
+    <p2 id="p2"></p2><label>
+</div> <br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rmp71DELE2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Thank you again !
+</body>
+</html>
